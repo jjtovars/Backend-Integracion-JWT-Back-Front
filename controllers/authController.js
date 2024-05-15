@@ -43,7 +43,7 @@ exports.autenticarUsuario = async(req, res) => {
                 if(error) throw error;
 
                 //Mensaje confirmacion
-                res.json({msg: 'correcto'})
+                res.json({msg: 'correcto', token})
                 // res.json({token})
             }
         );
